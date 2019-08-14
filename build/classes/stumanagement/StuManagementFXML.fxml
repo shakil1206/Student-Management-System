@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="743.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stumanagement.StuManagementFXMLController">
+   <top>
+      <VBox alignment="CENTER" prefHeight="86.0" prefWidth="674.0" style="-fx-background-color: #004e75;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Student Managment System" textFill="#fffbfb">
+               <font>
+                  <Font name="Agency FB Bold" size="45.0" />
+               </font>
+            </Label>
+            <Label text="Education is a Power" textFill="#fcf7f7">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="346.0" prefWidth="124.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#AddStudentAction" prefHeight="43.0" prefWidth="122.0" style="-fx-background-color: #0b608b;" text="Add Student" textFill="#f8f6f6">
+               <font>
+                  <Font name="Agency FB Bold" size="21.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#AllStudentAction" prefHeight="46.0" prefWidth="121.0" style="-fx-background-color: #0b608b;" text="All Student" textFill="#fcfcfc">
+               <font>
+                  <Font name="Agency FB Bold" size="22.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <center>
+      <VBox fx:id="MainContent" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: gray; -fx-border-width: 0 0 0 2;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
